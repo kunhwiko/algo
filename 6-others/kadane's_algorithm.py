@@ -26,4 +26,4 @@ def max_product(nums):
 		curr_max = max(nums[i], nums[i] + curr)
 		curr_min = min(nums[i], nums[i] + curr)
 		best = max(best, curr_max)
-	return best 
+	return best  
