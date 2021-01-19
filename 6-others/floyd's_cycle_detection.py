@@ -22,7 +22,7 @@ def detect(head):
         if slow == fast:
             break
 		
-	# if a cycle doesn't exist 
+    # if a cycle doesn't exist 
     if fast == None or fast.next == None:
         return None
     while head != fast:
