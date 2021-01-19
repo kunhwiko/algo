@@ -1,6 +1,6 @@
 # Backtracking is a DFS algorithm that "backtracks" when there are no available options 
 
-# Example 1:
+# Example 1
 # Find all well formed parentheses possible for n pairs  
 
 class Example1:

@@ -24,3 +24,4 @@ def longest_nonrepeat_substring(s):
 		indices[s[i]] = i
 		longest = max(longest, i-start+1)
 	return longest 
+
