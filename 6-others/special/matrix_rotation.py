@@ -17,7 +17,7 @@ def rotate_clockwise(matrix):
             l += 1
             r -= 1
 
-# Flippng counter clockwise 
+# Flipping counter clockwise 
 # Reverse each row, then transpose the matrix 
 
 def rotate_clockwise(matrix):    
@@ -51,6 +51,3 @@ def rotate_flip(matrix):
             matrix[top][j], matrix[bot][j] = matrix[bot][j], matrix[top][j]
             top += 1
             bot -= 1
-    print(matrix)
-
-rotate_flip([[1,2,3],[5,6,7],[9,10,11],[13,14,15]])
