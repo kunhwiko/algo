@@ -1,5 +1,9 @@
 # Backtracking is a DFS algorithm that "backtracks" when there are no available options 
 
+# It's nice to think of backtracking in the following way:
+# For example, to find permutations of [1,2,3]
+# f([], [1,2,3]) --> f([1], [2,3]), f([2], [1,3]), f([3], [1,2]) 
+
 # Example 1
 # Find all well formed parentheses possible for n pairs  
 
@@ -30,4 +34,17 @@ class Example2:
         if not nums:
             self.res.append(curr)
         for i in range(len(nums)):
-            self.backtrack(curr+[nums[i]], nums[:i] + nums[i+1:])
+            self.backtrack(curr + [nums[i]], nums[:i] + nums[i+1:])
+
+# Example 3
+# Find all subsets of an element 
+class Example3:
+    def subsets(self, nums):
+        self.res = []
+        self.backtrack([], nums)
+        return self.res 
+    
+    def backtrack(self, curr, nums):
+        self.res.append(curr)
+        for i in range(len(nums)):
+            self.backtrack(curr + [nums[i]], nums[i+1:])
