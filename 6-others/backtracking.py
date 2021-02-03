@@ -37,7 +37,8 @@ class Example2:
             self.backtrack(curr + [nums[i]], nums[:i] + nums[i+1:])
 
 # Example 3
-# Find all subsets of an element 
+# Find all subsets of an element
+ 
 class Example3:
     def subsets(self, nums):
         self.res = []

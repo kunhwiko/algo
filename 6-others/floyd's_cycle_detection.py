@@ -3,9 +3,9 @@
 
 # how does it work?
 # pointer "fast" moves twice as fast as pointer "slow" (often called "hare" and "tortoise")
-# once slow and fast converge (if at all), another pointer starts from the head 
-# the new pointer and one of slow or fast will move at the same speed
-# the point of converge will be the the start of the cycle 
+# once slow and fast converge (if at all), another pointer will then start from the head 
+# the new pointer and one of slow or fast is then designated to move at the same speed
+# the new point of converge of these pointers will be the the start of the cycle 
 
 # proof 
 # a = distance from head to start of cycle

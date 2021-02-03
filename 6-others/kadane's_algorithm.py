@@ -14,7 +14,7 @@ def max_sum(nums):
     return best 
 
 # Example 2
-# Find the max sum of a contiguous array 
+# Find the max product of a contiguous array 
 
 def max_product(nums):
     # assume a non empty array 
